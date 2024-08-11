@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0a0f24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 50, 0.8);
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    background-color: #1b1f3a;
+    color: white;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3a40a1;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #565ee9;
+}
+
+.options-menu {
+    position: relative;
+}
+
+#menuButton {
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#menuButton:hover {
+    color: #565ee9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #1b1f3a;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    width: 200px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #565ee9;
+}
+
+.options-menu:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmarks-section {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addBookmark {
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #3a40a1;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#addBookmark:hover {
+    background-color: #565ee9;
+}
+
+#bookmarkGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bookmarkGrid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #2b3055;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#bookmarkGrid a:hover {
+    background-color: #565ee9;
+    transform: scale(1.1);
+}
+
+#bookmarkGrid a:nth-child(odd) {
+    width: 120px;
+    height: 120px;
+}
+
+#bookmarkGrid a:nth-child(even) {
+    width: 80px;
+    height: 80px;
+}
