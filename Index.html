@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tech Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Google">
+            <button onclick="searchGoogle()">Search</button>
+            <div class="options-menu">
+                <button id="menuButton">...</button>
+                <div id="menu" class="dropdown-content">
+                    <a href="#" onclick="changeTheme()">Change Theme</a>
+                    <a href="#" onclick="showNotifications()">Notifications</a>
+                    <a href="#" onclick="changeBackgroundImage()">Change Background</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bookmarks-section">
+            <button id="addBookmark">+</button>
+            <div id="bookmarkGrid"></div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
